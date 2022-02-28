@@ -50,3 +50,8 @@ print(round(1 / 3, 4))
 
 # réponse 2.2
 
+print(round(1.9))
+
+print(round(1.62))
+
+print(round(1.62, 0,))
