@@ -1,7 +1,7 @@
 nombre = 123
 print(nombre)
 
-nombre = "123"
+nombre = "abc123"
 print(nombre)
 
 text ="lorem ipsum"
@@ -21,3 +21,31 @@ print(html_code)
 
 nickname = "Jhon \"Dead\" Doe"
 print(nickname)
+
+nombre = 3.14
+print(nombre)
+print(type(nombre))
+nombre = int(nombre)
+print(nombre)
+print(type(nombre))
+
+my_var = 0 
+my_var = bool(my_var)
+print(my_var)
+
+my_var = -123
+my_var = bool(my_var)
+print(my_var)
+
+my_var = " "
+my_var = bool(my_var)
+print(my_var)
+
+my_var = -1.001
+my_var = -123
+my_var = bool(my_var)
+print(my_var)
+
+my_var = [None]
+my_var = bool(my_var)
+print(my_var)
