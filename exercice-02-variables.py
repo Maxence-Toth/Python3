@@ -50,8 +50,18 @@ print(round(1 / 3, 4))
 
 # réponse 2.2
 
-print(round(1.9))
+n1 = 2
+n1 = float(n1)
+print(float(n1))
 
-print(round(1.62))
+n2 = 1.62
+n2 = int(n2)
+print(int(n2))
 
-print(round(1.62, 0,))
+n3 = 1.62
+n3 = round( 1.62, 0)
+print(n3)
+n3 = int(n3)
+print(n3)
+
+

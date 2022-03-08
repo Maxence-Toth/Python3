@@ -27,6 +27,11 @@ friends = 3
 
 # réponse 3.2
 
+candies_rest = candies  % friends
+print (candies_rest) 
+
+chocolates_rest = chocolates % friends
+print (chocolates_rest)
 
 # exo 3.3
 # Suite de l'exercice précédent.
@@ -38,11 +43,20 @@ friends = 3
 
 # réponse 3.3
 
+candies_per_person = candies // friends
+print(candies_per_person)
+
+chocolates_per_person = chocolates // friends
+print(chocolates_per_person)
+
 # exo 3.4
 # Calculez la moyenne des nombres suivants : 1, 1, 2, 3, 5, 8, 13.
 # Affectez le résultat à une variable et affichez le résultat.
 
 # réponse 3.4
+
+moyenne = ( 1 + 1 + 2 + 3 + 5 + 8 + 13) / 7
+print(moyenne)
 
 # exo 3.5
 # Alice est en vacance et elle veut suivre ses dépenses quotidiennes.
@@ -59,6 +73,23 @@ friends = 3
 
 # réponse 3.5
 
+day1 = 26.82
+day2 = 42.00
+day3 = 31.41
+day4 = 63.7
+day5 = 32
+
+days = 5 
+
+total = day1 + day2 + day3 + day4 + day5
+
+average = total / days
+
+print(days)
+print(total)
+print(average)
+
+
 # exo 3.6
 # La formule suivante permet de convertir des miles en mètres :
 #
@@ -69,9 +100,13 @@ friends = 3
 # Calculez la distance en mètres avec la variable `miles` puis stockez le résultat dans la variable `meters`.
 # Convertissez les mètres en kilo mètres puis stockez le résultat dans la variable `km`.
 # Affichez un résultat arrondi de la distance en kilo mètre avec la fonction `round()`.
-miles = 3
+miles = 3 
 
 # réponse 3.6
+
+meters = miles * 1609.344
+km = round(meters / 1000)  
+print(km)
 
 # exo 3.7
 # La formule suivante permet de calculer le montant de la TVA à partir d'un prix « hors TVA » (HTVA) et du taux de la TVA en pourcentage
@@ -86,6 +121,9 @@ price = 314
 tax_rate = 20
 
 # réponse 3.7
+
+TVA = (price * tax_rate) / 100
+print(TVA)
 
 # exo 3.8
 # La formule suivante permet de calculer un prix TVA inlcuse à partir du prix HTVA et du taux de TVA en pourcentage
@@ -103,7 +141,12 @@ tax_rate = 20
 price = 271
 tax_rate = 20
 
+
 # réponse 3.8
+
+pricetva = price + price * tax_rate / 100
+print(pricetva)
+
 
 # exo 3.9
 # Charly fait ses courses.
@@ -118,3 +161,9 @@ tax_rate = 20
 
 # réponse 3.9
 
+price_kilo_1 = (1000/120) * 1.79
+
+price_kilo_2 = (1000/100) * 1.7
+
+charly= price_kilo_1 < price_kilo_2 
+print(charly)
