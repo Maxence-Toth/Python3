@@ -8,7 +8,10 @@ import random
 number = random.randint(0, 99)
 print(number)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28ba82cc76badc7943efbe23afb5941b08ae8b28
 # exo 4.1
 # écrivez un bloc if qui affiche
 # - "le nombre est égale à 1" si la variable number contient un 1
@@ -20,11 +23,14 @@ print(number)
 
 # réponse 4.1
 
+<<<<<<< HEAD
 if number == 1:
     print("le nombre est égale à 1")
 else:
     print("le nombre est différent de 1")
 
+=======
+>>>>>>> 28ba82cc76badc7943efbe23afb5941b08ae8b28
 # code 4.2
 # si 10 est un nombre pair, le modulo de 2 est égal à zéro
 print(10 % 2)
@@ -41,12 +47,15 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.2
+<<<<<<< HEAD
 if (number % 2) == 0:
     print("le nombre est pair")
 
 else:
     print("le nombre est impair")
 
+=======
+>>>>>>> 28ba82cc76badc7943efbe23afb5941b08ae8b28
 
 # exo 4.3
 # Écrivez un bloc if qui affiche
