@@ -1,6 +1,6 @@
 # # exercice-06-listes.py
 
-# import random
+import random
 
 # # Remarque 6.1
 # # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
