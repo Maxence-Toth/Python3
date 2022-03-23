@@ -6,7 +6,14 @@
 
 # réponse 5.1
 def multiplication(a: float, b: float) -> float:
+    """Renvoie le produit des nombres a et b 
+
+    a float le nombre a
+    b float le nombre b
+    return float
+    """
     return a * b
+print(help(multiplication))
 
 # exo 5.2
 # Trouvez la position de la chaîne de caractères `minim`
@@ -16,6 +23,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.2
+
+print(my_text.find('minim'))
+
 
 # exo 5.3
 # Affectez les caractères de l'index 12 à 20 inclus, de la variable `my_text`, à une autre variable
@@ -27,10 +37,14 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 # réponse 5.3
 
+my_textshort = my_text[12 : 21]
+print(my_textshort)
+
 # code 5.1
 # La méthode `str.split()` permet de scinder une chaîne de caractères en tableau de chaînes de caractères en utilisant un séparateur
 # Example : ici on scinde une chaîne de caractères en utilisant l'espace ' ' comme séparateur
-print("foo bar baz".split(' '))
+
+# print("foo bar baz".split(' '))
 
 # exo 5.4
 # Scindez la variable `my_text` en utilisant l'espace comme séparateur et affectez le résultat à une autre variable.
@@ -42,6 +56,11 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 # réponse 5.4
 
+my_text_espace = my_text.split(' ')
+print(my_text_espace[5])
+
+
+
 # code 5.2
 # En python, un saut de ligne dans une chaîne de caractères peut être obtenu en utilisant un caractère échappé
 my_text1 = "texte\nmulti\nligne"
@@ -50,16 +69,16 @@ my_text2 = """texte
 multi
 ligne"""
 # Mais dans la mémoire de python, les deux chaînes de caractères sont encodées de la même façon
-print('\n' in my_text1)
-print('\n' in my_text2)
+# print('\n' in my_text1)
+# print('\n' in my_text2)
 
 # code 5.3
 # La méthode `str.find()` permet de retrouver la position d'une chaîne caractères dans une autre chaîne de caractères
-print("foo bar baz".find('bar'))
-# Quand `str.find()` ne trouve pas de résultat, la méthode renvoit `-1`
-# Mais on peut aussi borner la recherche.
-# Exemple : ici on démarre la recherche à partir de l'index 5
-print("foo bar baz".find('bar', 5))
+# print("foo bar baz".find('bar'))
+# # Quand `str.find()` ne trouve pas de résultat, la méthode renvoit `-1`
+# # Mais on peut aussi borner la recherche.
+# # Exemple : ici on démarre la recherche à partir de l'index 5
+# print("foo bar baz".find('bar', 5))
 
 # exo 5.5
 # Trouvez au moins une façon de compter le nombre de lignes de la chaîne de caractère suivante :
@@ -69,4 +88,6 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 
 # réponse 5.5
+
+print(my_text.count('\n')+1)
 

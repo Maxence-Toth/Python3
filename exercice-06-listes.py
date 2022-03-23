@@ -1,50 +1,69 @@
-# exercice-06-listes.py
+# # exercice-06-listes.py
 
-import random
+# import random
 
-# Remarque 6.1
-# Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
+# # Remarque 6.1
+# # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
 
-# exo 6.1
-# Créez une liste nommée `my_list` contenant un nombre entier, un nombre à virgule flottante, une chaîne de caractères et un booléen
+# # exo 6.1
+# # Créez une liste nommée `my_list` contenant un nombre entier, un nombre à virgule flottante, une chaîne de caractères et un booléen
 
-# réponse 6.1
+# # réponse 6.1
+my_list = [1, 1.1, "foo", False]
 
-# exo 6.2
-# Affichez l'élément qui se trouve à la troisième position de la liste
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# # exo 6.2
+# # Affichez l'élément qui se trouve à la troisième position de la liste
+# my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
-# réponse 6.2
 
-# exo 6.3
-# Ajoutez une chaîne de caractères à la fin de la liste `my_list` (sans modfier le code d'initialisation) et affichez le résultat
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# # # réponse 6.2
 
-# réponse 6.3
+# print(my_list[2])
 
-# exo 6.4
-# Supprimez l'élément qui se trouve en deuxièm position de la liste et affichez le résultat
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# # # exo 6.3
+# # # Ajoutez une chaîne de caractères à la fin de la liste `my_list` (sans modfier le code d'initialisation) et affichez le résultat
+# # my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
-# réponse 6.4
+# # # réponse 6.3
 
-# exo 6.5
-# Remplacez l'élément qui se trouve en deuxièm position de la liste par un nombre entier et affichez le résultat
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# my_list.append("toto")
 
-# réponse 6.5
+# # # exo 6.4
+# # # Supprimez l'élément qui se trouve en deuxièm position de la liste et affichez le résultat
+# # my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
-# exo 6.6
-# Affichez la taille de la liste
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# # # réponse 6.4
 
-# réponse 6.6
+# my_list.pop(1)
+
+# # # exo 6.5
+#  # Remplacez l'élément qui se trouve en deuxièm position de la liste par un nombre entier et affichez le résultat
+# # my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+
+# # # réponse 6.5
+
+# my_list[1] = 1
+# print(my_list)
+
+# # # exo 6.6
+# # # Affichez la taille de la liste
+# my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+
+# # # réponse 6.6
+# print(len(my_list))
 
 # exo 6.7
 # Inversez la position des valeurs `bar` et `lorem` puis affichez le résultat
-my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
+# my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
-# réponse 6.7
+# # réponse 6.7
+
+bar = my_list.index('bar')
+lorem = my_list.index('lorem')
+
+my_list[bar], my_list[lorem] = my_list[lorem], my_list[bar]
+print(my_list)
+
 
 # Remarque 6.2
 # les exercices suivants nécessitent l'utilisation d'une boucle `for`
@@ -54,6 +73,8 @@ my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 my_list = [2.71, 42]
 
 # réponse 6.8
+
+
 
 # exo 6.9
 # Calculez la somme des nombres de la liste et affichez le résultat
