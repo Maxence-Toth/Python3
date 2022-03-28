@@ -74,33 +74,34 @@ import random
 #         break 
 
 ####################################################################
-#algo tirage de 2 nombres différents parmis 5 
+#algo tirage de 4 nombres différents parmis 5 
 
 
-# numbers = []
+numbers = []
+n = random.randint(1, 5)
+numbers.append(n)
 
-# #1er tirage
+while True:
+    n = random.randint(1, 5) 
+    if n not in numbers:
+        break
+    
+numbers.append(n)
 
-# n = random.randint(1, 5)
-# numbers.append(n)
 
-# #2eme tirage
 # while True:
-#     n = random.randint(1, 5)
-
-# #condition d'arret 
-
+#     n = random.randint(1, 5) 
 #     if n not in numbers:
-#         #le nombre n'a pas encore été tiré au hasard
-#         #ôn peut sortir de la boucle 
 #         break
+# numbers.append(n)  
 
+# while True:
+#     n = random.randint(1, 5) 
+#     if n not in numbers:
+#         break
+# numbers.append(n)  
 
-
-
-# numbers.append(n)
-
-# print(numbers)
+print(numbers)
 
 
 ###########################################################
@@ -140,5 +141,5 @@ import random
 
 #affichez les nombre de 0 à 20 qui sont multiples de 3 
 
-for numbers in range(0, 21, 3):
-    print(numbers)
+# for numbers in range(0, 21, 3):
+#     print(numbers)
